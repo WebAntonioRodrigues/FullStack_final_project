@@ -1,22 +1,24 @@
 import "../styles/Style.css"
+import '../styles/Navbar.css';
 
 
 function Navbar() {
 	return (
-		<nav>
-			<div className="logo">AutoLux</div>
+		<nav className='Navbar-container'>
+			<div className='logo-container'>
+				<p className='logo'>AutoLux</p>
+			</div>
 
-			<div>
+			<div className='menu-container'>
 				<a href='Home'>HOME</a>
 				<a href='Catalog'>CATALOG</a>
 				<a href='Favorites'>FAVORITES</a>
 				<a href='AboutUs'>ABOUT US</a>
 			</div>
 
-			<div>
-				<button>Icone de procura</button>
-				<a href='Contact'>Enquire</a>
-			</div>
+			<button className='button'>
+				<p className="text-button">ENQUIRE</p>
+			</button>
 		</nav>
 	);
 }

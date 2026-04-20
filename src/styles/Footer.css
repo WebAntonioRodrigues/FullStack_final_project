@@ -1,138 +1,139 @@
-
 .footer {
-    width: 100%;
-    height: 429px;
-
-    background: #0C0E10;
+	width: 100%;
+	height: 429px;
+	background: #0c0e10;
 }
 .footer-mega-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 48px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
 }
 
 .footer-container {
-    width: 260px;
-    height: 152px;
-    display: flex;
-    flex-direction: column;
+	width: 260px;
+	height: 152px;
+	display: flex;
+	flex-direction: column;
 }
 
 .footer-logo {
-    color: var(--text-secondary);
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 0px;
-    /*font-family: inter; (ADICIONAR!!!)*/ 
+	color: var(--text-secondary);
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 0px;
+	padding-bottom: 20px;
+	font-family: inter;
 }
 
 .footer-text-content {
-    width: 260px;
-    height: 46.63px;
-    padding-bottom: 0.63px;
+	width: 260px;
+	height: 46.63px;
+	padding-bottom: 0.63px;
 }
 
 .footer-text {
-  color: var(--text-primary);
-  font-size: 14px;
-  width: 260px;
-  height: 46px;
-  line-height: 22.75px;
-  letter-spacing: 0.35px;
-  /*font-family: inter; (ADICIONAR!!!)*/ 
-}
-
-.footer-text:hover {
-  color: var(--text-secondary);
+	color: var(--text-primary);
+	font-size: 14px;
+	width: 260px;
+	height: 46px;
+	line-height: 22.75px;
+	letter-spacing: 0.35px;
+	font-family: inter;
 }
 
 .footer-title {
-  font-size: 16px;
-  letter-spacing: 2.4px;
-  color: var(--text-primary);
-  /*font-family: Manrope; (ADICIONAR!!!)*/ 
+	font-size: 16px;
+	letter-spacing: 2.4px;
+	color: var(--text-primary);
+	padding-bottom: 20px;
+	font-family: Manrope;
 }
 
 .footer-list {
-  list-style: none;
-  padding-top: 2.5px;
-  padding-bottom: 1.5px;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  font-size: 14px;
-  letter-spacing: 0.35px;
-  line-height: 20px;
-   cursor: pointer;
-  transition: 0.2s;
-  /*font-family: inter; (ADICIONAR!!!)*/ 
+	color: var(--text-primary);
+	list-style: none;
+	padding-top: 2.5px;
+	padding-bottom: 1.5px;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	font-size: 14px;
+	letter-spacing: 0.35px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.2s;
+	font-family: inter; 
+}
+
+.footer-list:hover {
+	color: var(--text-secondary);
 }
 
 .footer-newsletter-text {
-  width: 260px;
-  height: 40px;
+	width: 260px;
+	height: 40px;
 }
 
 .newsletter {
-  display: flex;
-  margin-top: 8px;
-  height: 97px;
-  gap: 16px;
+	display: flex;
+	margin-top: 8px;
+	height: 97px;
+	gap: 16px;
 }
 
 .newsletter-input {
-  padding-top: 12px;
-  padding-right: 16px;
-  padding-bottom: 12px;
-  padding-left: 12px;
-  background: #6B7280;
-  border: none;
-  color: var(--text-primary);
-  outline: none;
-  letter-spacing: 0px;
-  /*font-family: inter; (ADICIONAR!!!)*/ 
+	padding-top: 12px;
+	padding-right: 16px;
+	padding-bottom: 12px;
+	padding-left: 12px;
+	background: #6b7280;
+	border: none;
+	color: var(--text-primary);
+	outline: none;
+	letter-spacing: 0px;
+	font-family: inter; 
 }
 
 .newsletter-btn {
-  background: #E9C176;
-  padding-top: 10px;
-  padding-right: 16px;
-  padding-bottom: 10px;
-  padding-left: 16px;
-  border: none;
-  width: 41.33px;
-  cursor: pointer;
-  font-size: 18px;
+	background: #e9c176;
+	padding-top: 10px;
+	padding-right: 16px;
+	padding-bottom: 10px;
+	padding-left: 16px;
+	border: none;
+	width: 41.33px;
+	cursor: pointer;
+	font-size: 18px;
 }
 
 .newsletter-btn-icone {
-  width: 9.33px;
-  height: 9.33px;
-  color: #412D00;
+	width: 9.33px;
+	height: 9.33px;
+	color: #412d00;
 }
 
 .horizontal-border {
-  width: fill;
-  height: 85px;
-  border-top: 1px #4447480D;
-padding-top: 32px;
-padding-bottom: 32px;
+	width: fill;
+	height: 85px;
+	border-top: 1px #4447480d;
+	padding-top: 32px;
+	padding-bottom: 32px;
 }
 
 .horizontal-border-container {
-  width: fill;
-  height: 20px;
-  flex-grow: vertical;
+	width: fill;
+	height: 20px;
+	flex-grow: vertical;
 }
 
 .horizontal-border-text {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  letter-spacing: 0.35px;
-  align-content: center;
-  vertical-align: middle;
-  color: #8E9192;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.35px;
+	align-content: center;
+	vertical-align: middle;
+	color: #8e9192;
 }

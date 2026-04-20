@@ -1,10 +1,13 @@
+import '../styles/Style.css';
+import '../styles/Footer.css';
+
 function Footer() {
 	return (
 		<footer className='footer'>
 			<div className='footer-mega-container'>
 				<div className='footer-container'>
-					<div className='footer-logo'>
-						<h2>AutoLux</h2>
+					<div>
+						<h2 className='footer-logo'>AutoLux</h2>
 					</div>
 					<div className='footer-text-content'>
 						<p className='footer-text'>
