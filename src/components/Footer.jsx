@@ -40,18 +40,17 @@ function Footer() {
 					</div>
 
 					<div className='newsletter'>
-						<input type='email' placeholder='Email Address' className='newsletter-input' />
-						<div className='newsletter-btn'>
-							<button className='newsletter-btn-icone'>→</button>
-						</div>
+						<input type='email' placeholder='Email Address' className='newsletter-input' /><button className='newsletter-btn'>
+							<p className='newsletter-btn-icone'>→</p>
+						</button>
 					</div>
 				</div>
 			</div>
-			<div className='horizontal-border'>
+			
 				<div className='horizontal-border-container'>
 					<p className='horizontal-border-text'>© 2024 AutoLux Global. All Rights Reserved.</p>
 				</div>
-			</div>
+			
 		</footer>
 	);
 }
