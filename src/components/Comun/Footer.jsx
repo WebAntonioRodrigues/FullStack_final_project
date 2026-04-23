@@ -1,5 +1,5 @@
-import '../styles/Style.css';
-import '../styles/Footer.css';
+import "../../styles/Footer.css"
+import "../../styles/Style.css";
 
 function Footer() {
 	return (
@@ -40,17 +40,17 @@ function Footer() {
 					</div>
 
 					<div className='newsletter'>
-						<input type='email' placeholder='Email Address' className='newsletter-input' /><button className='newsletter-btn'>
+						<input type='email' placeholder='Email Address' className='newsletter-input' />
+						<button className='newsletter-btn'>
 							<p className='newsletter-btn-icone'>→</p>
 						</button>
 					</div>
 				</div>
 			</div>
-			
-				<div className='horizontal-border-container'>
-					<p className='horizontal-border-text'>© 2024 AutoLux Global. All Rights Reserved.</p>
-				</div>
-			
+
+			<div className='horizontal-border-container'>
+				<p className='horizontal-border-text'>© 2024 AutoLux Global. All Rights Reserved.</p>
+			</div>
 		</footer>
 	);
 }
