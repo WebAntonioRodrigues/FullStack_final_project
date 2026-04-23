@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import '../../styles/Comun/Buttons.css';
-import '../../styles/Navbar.css';
+import '../../styles/Comun/Navbar.css';
 import '../../styles/Style.css';
 
 function Navbar() {
