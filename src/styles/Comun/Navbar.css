@@ -7,7 +7,7 @@
 	padding-bottom: 24px;
 	padding-left: 48px;
 	justify-content: space-between;
-	color: #121416cc 80%;
+	color: var(--primary-color) 80%;
 }
 
 .logo-container {

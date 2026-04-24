@@ -3,7 +3,7 @@ import '../../styles/Home/Hero.css';
 import '../../styles/Style.css';
 import '../../styles/Comun/Buttons.css';
 import Button from '../Comun/Button';
-import divider from '../../assets/Hero/Divider.png';
+import divider from '../../assets/Home/Hero/Divider.png';
 
 function Hero() {
 	return (
