@@ -1,0 +1,69 @@
+.CTA-mega-container {
+	justify-self: center;
+	width: 1088px;
+	height: 526px;
+	top: 4860px;
+	padding: 100px;
+	background-color: #1A1C1E;
+	/*border: 1px solid green;*/
+	border-radius: 4px;
+}
+
+.CTA-heading-container {
+	width: 768px;
+	height: 150px;
+	padding-left: 55px;
+
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	/*border: 1px solid green;*/
+}
+
+.CTA-heading {
+	text-align: center;
+	font-family: Manrope;
+	font-weight: 900;
+	font-style: bold;
+	font-size: 55px;
+	line-height: 100%;
+	letter-spacing: -3px;
+	vertical-align: middle;
+	color: var(--text-primary);
+}
+
+.CTA-heading-highlight {
+	color: var(--text-secondary);
+}
+
+.CTA-text-container {
+	width: 768px;
+	height: 88px;
+	padding-top: 32px;
+	display: flex;
+	justify-content: center;
+	justify-self: center;
+	align-items: center;
+	/*border: 1px solid green;*/
+}
+
+.CTA-text {
+	font-family: Inter;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	text-align: center;
+	color: #c4c7c7;
+}
+
+.CTA-btn-container {
+	width: 768px;
+	height: 100px;
+	padding-top: 32px;
+	display: flex;
+	justify-content: center;
+    gap: 20px;
+	justify-self: center;
+	/*border: 1px solid green;*/
+}

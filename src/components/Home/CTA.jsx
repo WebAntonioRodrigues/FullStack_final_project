@@ -6,16 +6,15 @@ import Button from '../Comun/Button';
 
 function CTA() {
 	return (
-		<section>
-			<div></div>
+		<section className='CTA-mega-container'>
 			<div className='CTA-heading-container'>
-				<h1>
+				<h1 className='CTA-heading'>
 					YOUR JOURNEY TO <br />
-					<span>EXCELLENCE</span> BEGINS HERE
+					<span className='CTA-heading-highlight'>EXCELLENCE</span> BEGINS HERE
 				</h1>
 			</div>
 			<div className='CTA-text-container'>
-				<p>Browse our full inventory of world-class automotive engineering. From rare classics to modern hypercars.</p>
+				<p className='CTA-text'>Browse our full inventory of world-class automotive engineering. <br /> From rare classics to modern hypercars.</p>
 			</div>
 			<div className='CTA-btn-container'>
 				<div>
