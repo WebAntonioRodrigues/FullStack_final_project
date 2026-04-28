@@ -1,29 +1,28 @@
 .Featured-mega-container {
 	width: 100%;
-	height: 1188px;
-	padding-top: 128px;
-	padding-right: 96px;
-	padding-bottom: 128px;
-	padding-left: 96px;
+	padding: 128px 96px;
+	display: flex;
+	flex-direction: column;
 	gap: 80px;
 	background-color: var(--primary-color);
+	overflow: hidden;
 	border: 1px solid green;
 }
 
 .Featured-header-container {
-	width: 1088px;
+	width: 100%;
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	justify-self: center;
-	/*border: 1px solid green;*/
+	border: 1px solid green;
 }
 
 .Featured-heading-container {
 	width: 600px;
 	height: 80px;
 	gap: 17px;
-	/*border: 1px solid green;*/
+	border: 1px solid green;
 }
 
 .Featured-txt {
@@ -71,8 +70,8 @@
 	font-family: Manrope;
 	border: none;
 	background-color: transparent;
-	margin-top: 60px;
-	/*border: 1px solid green;*/
+	align-self: flex-end;
+	border: 1px solid green;
 }
 
 .Featured-btn:hover {
@@ -84,4 +83,26 @@
 .Featured-link {
 	text-decoration: none;
 	border-bottom: none !important;
+	align-self: flex-end;
+}
+
+.Featured-Grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 400px 400px;
+	gap: 12px;
+	align-items: stretch;
+}
+
+.Featured-link-car {
+  text-decoration: none;
+  display: block;
+}
+
+.Featured-link-car-big {
+  grid-column: span 8;
+}
+
+.Featured-link-car-small {
+  grid-column: span 4;
 }
