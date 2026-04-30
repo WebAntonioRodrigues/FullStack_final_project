@@ -1,0 +1,127 @@
+.DetailHero-grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	width: 100%;
+	height: 870px;
+	row-gap: 24px;
+	column-gap: 24px;
+    padding-top: 20px;
+	padding-right: 40px;
+    padding-left: 40px;
+	overflow: hidden;
+	/*border: 4px solid green;*/
+}
+
+.DetailHero-main {
+	display: flex;
+	grid-row: 1;
+	grid-column: 1 / 9;
+    position: relative;
+	/*border: 1px solid green;*/
+}
+
+.DetailHero-main-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.DetailHero-title-container {
+	width: 90%;
+	height: 250px;
+	bottom: 48px;
+	left: 48px;
+	gap: 16px;
+	position: absolute;
+	/*border: 10px solid green;*/
+}
+
+.DetailHero-title {
+	height: 190px;
+	gap: 0.5px;
+	/* border: 1px solid green; */
+}
+
+.DetailHero-marca {
+	width: 100%;
+	height: 96px;
+	font-size: 96px;
+	line-height: 96px;
+	font-weight: 800;
+	letter-spacing: -4px;
+	text-transform: uppercase;
+	font-family: Manrope;
+	color: var(--text-primary);
+	opacity: 80%;
+	/* border: 1px solid green; */
+}
+
+.DetailHero-modelo-container {
+	width: 100%;
+	height: 96px;
+	/* border: 1px solid green; */
+}
+
+.DetailHero-modelo {
+	width: 100%;
+	height: 96px;
+	font-size: clamp(50px, 3vw, 90px);
+	line-height: 96px;
+	font-weight: 800;
+	letter-spacing: -4px;
+	text-transform: uppercase;
+	font-family: Manrope;
+	color: var(--text-secondary);
+}
+
+.DetailHero-tags-container {
+	width: 100%;
+	height: 38px;
+	display: flex;
+	gap: 16px;
+
+	/* border: 1px solid red; */
+}
+
+.DetailHero-tags {
+	width: 200px;
+	height: 38px;
+	text-align: center;
+	font-family: inter;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #b6b8be;
+	border-radius: 20px;
+	padding: 8px 24px;
+	background: #46494e;
+	opacity: 70%;
+	border: 2px solid #ffffff66;
+}
+
+.DetailHero-side-container {
+	display: flex;
+	flex-direction: column;
+	height: 870px;
+	grid-row: 1;
+	grid-column: 9 / 13;
+	gap: 24px;
+
+	/* border: 1px solid green; */
+}
+
+.DetailHero-side-wrapper {
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	overflow: hidden;
+	flex: 1;
+	/* border: 1px solid red; */
+}
+
+.DetailHero-side-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}

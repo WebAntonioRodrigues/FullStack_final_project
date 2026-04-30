@@ -22,13 +22,13 @@
 	width: 32px;
 	height: 32px;
 	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.12);
-	border: 0.5px solid rgba(255, 255, 255, 0.2);
+	background: #ffffff4d;
+	border: 0.5px solid #C4C7C7;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-size: 14px;
-	color: #fff;
+	color: var(--text-primary);
 }
 
 .SmallCard-content {
@@ -42,17 +42,18 @@
 
 .SmallCard-title {
 	margin: 0 0 8px;
-	font-size: clamp(16px, 2.5vw, 20px);
+	font-size: 16px;
 	font-weight: 700;
-	color: #fff;
+	color: var(--text-primary);
 	letter-spacing: -0.02em;
 	line-height: 1.15;
+    font-family: Manrope;
 }
 
 .SmallCard-price {
-	font-size: clamp(16px, 2vw, 20px);
+	font-size: 16px;
 	font-weight: 700;
-	color: #d4a947;
+	color: var(--text-secondary);
 	margin-bottom: 6px;
 }
 
@@ -69,6 +70,6 @@
 	text-transform: uppercase;
 	padding: 3px 10px;
 	border-radius: 20px;
-	border: 0.5px solid rgba(255, 255, 255, 0.3);
-	color: rgba(255, 255, 255, 0.7);
+	border: 0.5px solid #ffffff4d;
+	color: #C4C7C7;
 }
