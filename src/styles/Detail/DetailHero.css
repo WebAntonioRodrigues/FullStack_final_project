@@ -23,6 +23,7 @@
 .DetailHero-main-img {
 	width: 100%;
 	height: 100%;
+    border-radius: 4px;
 	object-fit: cover;
 }
 
@@ -123,5 +124,6 @@
 .DetailHero-side-img {
 	width: 100%;
 	height: 100%;
+    border-radius: 4px;
 	object-fit: cover;
 }

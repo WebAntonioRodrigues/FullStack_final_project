@@ -1,8 +1,8 @@
 .Pricing-section-container {
 	width: 100%;
 	height: 150px;
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -32,30 +32,33 @@
 	text-transform: uppercase;
 	font-weight: 400;
 	font-size: 16px;
-    line-height: 16px;
-    letter-spacing: 4px;
-    opacity: 60%;
+	line-height: 16px;
+	letter-spacing: 4px;
+	opacity: 60%;
 }
 
-.Price-container{
-    width: 100%;
+.Price-container {
+	width: 100%;
 	height: 120px;
+	align-self: flex-end;
+	display: flex;
 
 	/* border: 1px solid green; */
 }
 
-.Price{
-    font-family: Manrope;
-    color: var(--text-primary);
-    font-size: 78px;
-   font-weight: 700;
+.Price {
+	
+	font-family: Manrope;
+	color: var(--text-primary);
+	font-size: 78px;
+	font-weight: 700;
 }
 
-.Pricing-btn-container{
-    align-self: flex-end;
-    display: flex;
-    width: 470px;
-    height: 62px;
-    gap: 12px;
-    /* border: 1px solid red; */
+.Pricing-btn-container {
+	align-self: center;
+	display: flex;
+	width: 470px;
+	height: 62px;
+	gap: 12px;
+	/* border: 1px solid red; */
 }

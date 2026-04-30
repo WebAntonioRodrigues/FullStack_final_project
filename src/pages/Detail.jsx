@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import useCarList from '../Hooks/useCarList';
 import DetailHero from '../components/Detail/DetailHero';
 import Pricing from '../components/Detail/Pricing';
+import Technical from '../components/Detail/Technical';
 
 
 function Detail() {
@@ -16,6 +17,7 @@ function Detail() {
 		<div>
 			<DetailHero car={car}></DetailHero>
 			<Pricing car={car}></Pricing>
+			<Technical car={car}></Technical>
 		</div>
 	);
 }
