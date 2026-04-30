@@ -56,3 +56,53 @@
     letter-spacing: 1px;
 	
 }
+
+/* Detail/Pricing */
+
+.text-btn-pricing-primary{
+	color: #412d00;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 20px;
+	text-align: center;
+	font-family: Manrope;
+
+}
+
+.btn-pricing-primary{
+	background-color: var(--text-secondary);
+	width: 235px;
+	height: 60px;
+	border-radius: 8px;
+	padding-top: 20px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	padding-left: 40px;
+	border: none;
+	cursor: pointer;
+
+}
+
+.text-btn-pricing-secondary{
+	color: #E2E2E5;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 20px;
+	text-align: justify;
+	font-family: Manrope;
+    letter-spacing: 1px;
+
+}
+
+.btn-pricing-secondary{
+	background-color: transparent;
+	width: 235px;
+	height: 60px;
+	border-radius: 8px;
+	padding-top: 20px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+	padding-left: 30px;
+	border: 1px solid #444748;
+	cursor: pointer;
+}

@@ -1,0 +1,61 @@
+.Pricing-section-container {
+	width: 100%;
+	height: 150px;
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+	padding-left: 40px;
+	padding-right: 40px;
+	margin-top: 20px;
+	/* border: 1px solid green; */
+}
+
+.Pricing-container {
+	width: 350px;
+	height: 100%;
+	gap: 8px;
+	/* border: 1px solid green; */
+}
+
+.Pricing-txt-container {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	/* border: 1px solid green; */
+}
+
+.Pricing-txt {
+	font-family: inter;
+	color: var(--text-primary);
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 4px;
+    opacity: 60%;
+}
+
+.Price-container{
+    width: 100%;
+	height: 120px;
+
+	/* border: 1px solid green; */
+}
+
+.Price{
+    font-family: Manrope;
+    color: var(--text-primary);
+    font-size: 78px;
+   font-weight: 700;
+}
+
+.Pricing-btn-container{
+    align-self: flex-end;
+    display: flex;
+    width: 470px;
+    height: 62px;
+    gap: 12px;
+    /* border: 1px solid red; */
+}

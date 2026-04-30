@@ -1,7 +1,8 @@
 import { useParams } from 'react-router-dom';
 import useCarList from '../Hooks/useCarList';
 import DetailHero from '../components/Detail/DetailHero';
-import "../styles/Detail/Detail.css";
+import Pricing from '../components/Detail/Pricing';
+
 
 function Detail() {
 	const { id } = useParams();
@@ -12,8 +13,9 @@ function Detail() {
 	if (!car) return null;
 
 	return (
-		<div className='Detail-page'>
-			<DetailHero car={car} />
+		<div>
+			<DetailHero car={car}></DetailHero>
+			<Pricing car={car}></Pricing>
 		</div>
 	);
 }
