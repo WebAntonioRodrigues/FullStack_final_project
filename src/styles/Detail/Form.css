@@ -1,0 +1,115 @@
+.Form-card {
+	width: 450px;
+	height: 600px;
+	background: #33353766;
+	border-radius: 16px;
+	border: 0.5px solid #ffffff1a;
+	padding: 28px 24px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	margin-top: 80px;
+	margin-left: 400px;
+	/* border: 1px solid green; */
+}
+
+.Form-agent {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	/* border: 1px solid green;  */
+}
+
+.Form-agent-img {
+	width: 64px;
+	height: 64px;
+	border-radius: 10px;
+	object-fit: cover;
+}
+
+.Form-agent-name {
+	font-family: Manrope;
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: -1px;
+	line-height: 28px;
+	text-transform: uppercase;
+	color: var(--text-primary);
+}
+
+.Form-agent-info {
+	font-family: Inter;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #8e9192;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 1px;
+}
+
+.Form-field-container {
+	width: 375px;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	/* border: 1px solid green; */
+}
+
+.Form-field {
+	height: 80px;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	/* border: 1px solid green; */
+}
+
+.Form-txt {
+	font-family: Inter;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	color: #8e9192;
+}
+
+.Form-input {
+	width: 100%;
+	height: 55px;
+	background: #333537;
+	border: 0.5px solid #ffffff1a;
+	border-radius: 8px;
+	padding: 18px 20px;
+	font-size: 14px;
+	font-family: Inter;
+	color: #6b7280;
+	outline: none;
+}
+
+.Form-select {
+	width: 100%;
+	height: 55px;
+	background: #333537;
+	border: 0.5px solid #ffffff1a;
+	border-radius: 8px;
+	padding: 18px 20px;
+	font-size: 14px;
+	font-family: Inter;
+	outline: none;
+	color: var(--text-primary);
+}
+
+.form-btn{
+    align-self: center;
+}
+
+.Form-info{
+    font-family: Inter;
+    color: #8E9192;
+    font-weight: 400;
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 16px;
+    letter-spacing: 1.2px;
+}

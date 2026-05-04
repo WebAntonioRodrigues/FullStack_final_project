@@ -3,7 +3,7 @@ import useCarList from '../Hooks/useCarList';
 import DetailHero from '../components/Detail/DetailHero';
 import Pricing from '../components/Detail/Pricing';
 import Technical from '../components/Detail/Technical';
-
+import Narrative from '../components/Detail/Narrative';
 
 function Detail() {
 	const { id } = useParams();
@@ -18,6 +18,7 @@ function Detail() {
 			<DetailHero car={car}></DetailHero>
 			<Pricing car={car}></Pricing>
 			<Technical car={car}></Technical>
+			<Narrative car={car}></Narrative>
 		</div>
 	);
 }
