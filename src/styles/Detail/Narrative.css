@@ -5,12 +5,13 @@
 	grid-template-columns: repeat(12, 1fr);
 	row-gap: 80px;
 	column-gap: 80px;
+	margin-left: 100px;
 	/* border: 1px solid green; */
 }
 
 .descrip-container {
 	width: 660px;
-	height: 740px;
+	height: 700px;
 	grid-row: 1;
 	grid-column: 1 / 7;
 	position: relative;
@@ -38,7 +39,7 @@
 
 .descrip-return-container {
 	width: 100%;
-	height: 430px;
+	height: 350px;
 	gap: 24px;
 	/* border: 1px solid green; */
 }

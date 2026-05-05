@@ -1,5 +1,6 @@
 import CarList from '../Hooks/useCarList';
 import CarFilters from '../Hooks/CarFilters';
+import CatalogHeader from '../components/Catalog/CatalogHeader';
 
 function Catalog() {
 	/*
@@ -7,7 +8,12 @@ function Catalog() {
 	const { filters, setFilters, appFilters } = CarFilters(list);
 */
 
-	return <div></div>;
+	return (
+		<div>
+			<CatalogHeader></CatalogHeader>
+		</div>
+	);
+
 }
 
 export default Catalog;

@@ -6,22 +6,25 @@ import Favorites from './pages/Favorites';
 import Detail from './pages/Detail';
 import Contact from './pages/Contact';
 import Catalog from './pages/Catalog';
+import FavoritesProvider from './context/FavoritesProvider';
 
 function App() {
 	return (
 		<BrowserRouter>
-			<Navbar></Navbar>
+			<FavoritesProvider>
+				<Navbar></Navbar>
 
-			<Routes>
-				<Route path='/' element={<Home></Home>} />
-				<Route path='/Catalog' element={<Catalog></Catalog>} />
-				<Route path='/Detail' element={<Detail></Detail>} />
-				<Route path='/Detail/:id' element={<Detail />} />
-				<Route path='/Favorites' element={<Favorites></Favorites>} />
-				<Route path='/Contact' element={<Contact></Contact>} />
-			</Routes>
+				<Routes>
+					<Route path='/' element={<Home></Home>} />
+					<Route path='/Catalog' element={<Catalog></Catalog>} />
+					<Route path='/Detail' element={<Detail></Detail>} />
+					<Route path='/Detail/:id' element={<Detail></Detail>} />
+					<Route path='/Favorites' element={<Favorites></Favorites>} />
+					<Route path='/Contact' element={<Contact></Contact>} />
+				</Routes>
 
-			<Footer></Footer>
+				<Footer></Footer>
+			</FavoritesProvider>
 		</BrowserRouter>
 	);
 }

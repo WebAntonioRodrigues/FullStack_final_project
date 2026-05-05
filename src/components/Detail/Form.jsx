@@ -39,7 +39,7 @@ function Form() {
 			
 			<div className='form-btn'>
 				<Link className='link' to='/Contact'>
-					<Button className='btn-pricing-primary' text='SEND ENQUIRY' textClassName='text-btn-pricing-primary'></Button>
+					<Button className='btn-form-primary' text='SEND ENQUIRY' textClassName='text-btn-pricing-primary'></Button>
 				</Link>
 			</div>
 			

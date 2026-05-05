@@ -4,6 +4,7 @@ import DetailHero from '../components/Detail/DetailHero';
 import Pricing from '../components/Detail/Pricing';
 import Technical from '../components/Detail/Technical';
 import Narrative from '../components/Detail/Narrative';
+import Alternatives from '../components/Detail/Alternatives';
 
 function Detail() {
 	const { id } = useParams();
@@ -19,6 +20,7 @@ function Detail() {
 			<Pricing car={car}></Pricing>
 			<Technical car={car}></Technical>
 			<Narrative car={car}></Narrative>
+			<Alternatives car={car}></Alternatives>
 		</div>
 	);
 }

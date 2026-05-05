@@ -1,10 +1,23 @@
 import { Link } from 'react-router-dom';
 import Button from '../Comun/Button';
+import { useFavorites } from '../../context/FavoritesContext';
 import '../../styles/Detail/Pricing.css';
 import '../../styles/Comun/Buttons.css';
 
-function pricing({ car }) {
+function Pricing({ car }) {
+	const { addFavorite, removeFavorite, isFavorite } = useFavorites();
+
 	if (!car) return null;
+	
+	const favorito = isFavorite(car.id);
+
+	const handleFavorite = () => {
+		if (favorito) {
+			removeFavorite(car.id);
+		} else {
+			addFavorite(car);
+		}
+	};
 
 	return (
 		<section className='Pricing-section-container'>
@@ -18,14 +31,12 @@ function pricing({ car }) {
 			</div>
 
 			<div className='Pricing-btn-container'>
-				<div>
-					<Link className='link' to='/Detail'>
-						<Button className='btn-pricing-secondary' text='♡ ADD TO FAVORITES' textClassName='text-btn-pricing-secondary'></Button>
-					</Link>
+				<div onClick={handleFavorite}>
+					<Button className='btn-pricing-secondary' text={favorito ? '♥ REMOVE FAVORITE' : '♡ ADD TO FAVORITES'} textClassName='text-btn-pricing-secondary' />
 				</div>
 				<div>
 					<Link className='link' to='/Catalog'>
-						<Button className='btn-pricing-primary' text='RESERVE NOW' textClassName='text-btn-pricing-primary'></Button>
+						<Button className='btn-pricing-primary' text='RESERVE NOW' textClassName='text-btn-pricing-primary' />
 					</Link>
 				</div>
 			</div>
@@ -33,4 +44,4 @@ function pricing({ car }) {
 	);
 }
 
-export default pricing;
+export default Pricing;
