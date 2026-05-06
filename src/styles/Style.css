@@ -37,7 +37,7 @@ main {
 
 /* typography */
 
-@media (max-width: 1366px) {
+@media (max-width: 1280px) {
 	html {
 		font-size: 14px;
 	}
@@ -79,4 +79,5 @@ main {
 	--secondary-color: ;
 	--text-primary: #e2e2e5;
 	--text-secondary: #e9c176;
+	--text-tertiary: #8E9192;
 }

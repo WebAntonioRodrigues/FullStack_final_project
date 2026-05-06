@@ -1,7 +1,7 @@
 import CarList from '../Hooks/useCarList';
 import CarFilters from '../Hooks/CarFilters';
 import CatalogHeader from '../components/Catalog/CatalogHeader';
-
+import CatalogResults from '../components/Catalog/CatalogResults';
 function Catalog() {
 	/*
 	const { list } = CarList();
@@ -11,6 +11,7 @@ function Catalog() {
 	return (
 		<div>
 			<CatalogHeader></CatalogHeader>
+			<CatalogResults></CatalogResults>
 		</div>
 	);
 

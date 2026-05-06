@@ -1,0 +1,48 @@
+.CatalogResults-section {
+	width: 100%;
+	height: 1236px;
+	gap: 48px;
+	margin-top: 30px;
+	padding: 30px;
+    display: flex;
+
+	border: 1px solid green;
+}
+
+.CatalogResults-Search-container {
+	width: 400px;
+	height: 100%;
+
+	border: 1px solid green;
+}
+
+.CatalogResults-vehicle-grid {
+	width: 1400px;
+	height: 100%;
+	gap: 40px;
+
+	border: 1px solid green;
+}
+
+
+.CatalogResults-filters{
+	width: 100%;
+	height: 42px;
+	border-bottom: 1px solid #4447481A;
+	justify-content: space-between;
+	padding-bottom: 24px;
+
+	border: 1px solid green;
+}
+
+.CatalogResults-container{
+	width: 100%;
+	height: 950px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	row-gap: 64px;
+	column-gap: 32px;
+	padding-top: 5px;
+
+	border: 1px solid green;
+}
