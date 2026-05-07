@@ -15,6 +15,7 @@ function Navbar() {
 				<a href='/'>HOME</a>
 				<a href='/Catalog'>CATALOG</a>
 				<a href='/Favorites'>FAVORITES</a>
+				
 			</div>
 
 			<Link className='link' to='/Contact'>
