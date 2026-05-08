@@ -2,17 +2,21 @@ import { useState } from 'react';
 import '../../styles/Catalog/CatalogResults.css';
 import CatalogCard from './CatalogCard';
 import useCarList from '../../Hooks/useCarList';
+import AsideSearch from './AsideSearch';
+import CarFilters from '../../Hooks/CarFilters';
 
 function CatalogResults() {
 	const { list } = useCarList();
 	const [limit, setLimit] = useState(6);
 	const [order, setOrder] = useState('default');
+	const { filters, setFilters, appFilters } = CarFilters();
+
 
 	const handleLoadMore = () => {
 		setLimit(value => value + 3);
 	};
 
-	let displayList = [...list];
+	let displayList = [...appFilters(list)];
 
 	
 	if (order === 'low-to-high') {
@@ -26,7 +30,9 @@ function CatalogResults() {
 
 	return (
 		<section className='CatalogResults-section'>
-			<div className='CatalogResults-Search-container'></div>
+			<div className='CatalogResults-Search-container'>
+				<AsideSearch filters={filters} setFilters={setFilters} appFilters={appFilters}></AsideSearch>
+			</div>
 
 			<div className='CatalogResults-vehicle-grid'>
 				<div className='CatalogResults-filters'>

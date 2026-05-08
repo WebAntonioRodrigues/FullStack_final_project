@@ -35,6 +35,26 @@ main {
 	display: block !important;
 }
 
+ ::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+::-webkit-scrollbar-track {
+    background: #e9c176; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: #e9c176; 
+    border-radius: 8px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d4a85a; 
+}
+
 /* typography */
 
 @media (max-width: 1280px) {

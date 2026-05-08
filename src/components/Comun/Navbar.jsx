@@ -15,8 +15,11 @@ function Navbar() {
 				<a href='/'>HOME</a>
 				<a href='/Catalog'>CATALOG</a>
 				<a href='/Favorites'>FAVORITES</a>
-				
 			</div>
+
+			{/*	const handleSearch = e => {
+		setFilters(prev => ({ ...prev, search: e.target.value }));
+	};*/}
 
 			<Link className='link' to='/Contact'>
 				<Button className='btn-Nav' text='ENQUIRE' textClassName='text-btn-primary'></Button>
