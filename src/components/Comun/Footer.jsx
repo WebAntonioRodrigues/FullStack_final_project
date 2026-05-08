@@ -49,7 +49,7 @@ function Footer() {
 			</div>
 
 			<div className='horizontal-border-container'>
-				<p className='horizontal-border-text'>© 2024 AutoLux Global. All Rights Reserved.</p>
+				<p className='horizontal-border-text'>© 2024 AutoLux Global. All Rights Reserved. By António Silva Rodrigues</p>
 			</div>
 		</footer>
 	);

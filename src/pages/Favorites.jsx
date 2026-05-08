@@ -1,24 +1,20 @@
-import { useFavorites } from '../context/FavoritesContext';
-import SmallCard from '../components/Home/SmallCard';
+
+import FavCard from '../components/Favorites/FavCard';
+import FavInfo from '../components/Favorites/FavInfo';
+import FavHeader from '../components/Favorites/FavHeader';
 
 function Favorites() {
-	const { favorites } = useFavorites();
-
-	if (favorites.length === 0) {
-		return (
-			<div>
-				<p>Não tens carros favoritos.</p>
-			</div>
-		);
-	}
 
 	return (
 		<div>
-			{favorites.map(car => (
-				<SmallCard key={car.id} car={car} />
-			))}
+			<FavHeader></FavHeader>
+
+			<FavCard></FavCard>
+
+			<FavInfo></FavInfo>
 		</div>
 	);
+	
 }
 
 export default Favorites;

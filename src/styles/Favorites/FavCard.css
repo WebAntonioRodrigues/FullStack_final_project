@@ -1,0 +1,22 @@
+.FavCard-section {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 64px;
+  column-gap: 48px;
+ padding-left: 30px;
+ padding-top: 48px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .FavCard-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .FavCard-section {
+    grid-template-columns: 1fr;
+  }
+}
