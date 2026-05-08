@@ -17,7 +17,7 @@ function FavCard() {
 	return (
 		<div className='FavCard-section'>
 			{favorites.map(car => (
-				<Link key={car.id} to={`/cars/${car.id}`} style={{ textDecoration: 'none' }}>
+				<Link key={car.id} to={`/Detail/${car.id}`} style={{ textDecoration: 'none' }}>
 					<SmallCard car={car} />
 				</Link>
 			))}

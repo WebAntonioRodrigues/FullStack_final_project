@@ -1,0 +1,75 @@
+
+
+.FavInfo-section{
+    height: 390px;
+    margin: 30px;
+    border-radius: 4px;
+    color: #1A1C1E;
+    display: flex;
+   justify-content: space-evenly;
+    padding: 64px;
+    column-gap: 80px;
+
+    /* border: 1px solid green; */
+}
+
+.FavInfo-container{
+    width: 50%;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    /* border: 1px solid green; */
+   
+}
+
+.FavInfo-title {
+    height: 90px;
+
+    /* border: 1px solid green; */
+}
+
+.FavInfo-txt {
+    color: var(--text-primary);
+    font-family: Manrope;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 45px;
+    letter-spacing: -1px;
+
+}
+
+.FavInfo-txt-container{
+    height: 52px;
+
+}
+
+.FavInfo-txt-desc {
+    color: var(--text-tertiary);
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    padding-top: 32px;
+
+}
+
+.FavInfo-btn-container{
+
+    height: 50px;
+    margin-top: 30px;
+    display: flex;
+    gap: 48px;
+/* 
+    border: 1px solid red; */
+}
+
+.FavInfo-container-img{
+    width: 50%;
+    overflow: hidden;
+    border-radius: 4px;
+background-image: url('../../assets/Favorites/volante.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
