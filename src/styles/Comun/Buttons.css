@@ -66,6 +66,7 @@
 	line-height: 20px;
 	text-align: center;
 	font-family: Manrope;
+	text-transform: uppercase;
 
 }
 
@@ -85,12 +86,13 @@
 
 .text-btn-pricing-secondary{
 	color: #E2E2E5;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
 	line-height: 20px;
 	text-align: justify;
 	font-family: Manrope;
     letter-spacing: 1px;
+	text-transform: uppercase;
 
 }
 

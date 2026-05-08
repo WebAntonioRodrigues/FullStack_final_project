@@ -1,5 +1,6 @@
-import "../../styles/Comun/Footer.css"
-import "../../styles/Style.css";
+import { Link } from 'react-router-dom';
+import '../../styles/Comun/Footer.css';
+import '../../styles/Style.css';
 
 function Footer() {
 	return (
@@ -20,17 +21,30 @@ function Footer() {
 				<div className='footer-container'>
 					<h4 className='footer-title'>NAVIGATION</h4>
 					<ul className='footer-list'>
-						<li>Home</li>
-						<li>Catalog</li>
-						<li>About Us</li>
+						<Link to={"/"}>
+							<li>Home</li>
+						</Link>
+
+						<Link to={"/catalog"}>
+							<li>Catalog</li>
+						</Link>
+						<Link>
+							<li>About Us</li>
+						</Link>
 					</ul>
 				</div>
 				<div className='footer-container'>
 					<h4 className='footer-title'>SUPPORT</h4>
 					<ul className='footer-list'>
-						<li>Privacy Policy</li>
-						<li>Terms of Service</li>
-						<li>Contact</li>
+						<Link>
+							<li>Privacy Policy</li>
+						</Link>
+						<Link>
+							<li>Terms of Service</li>
+						</Link>
+						<Link to={'/contact'}>
+							<li>Contact</li>
+						</Link>
 					</ul>
 				</div>
 				<div className='footer-container'>

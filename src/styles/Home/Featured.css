@@ -6,7 +6,7 @@
 	gap: 80px;
 	background-color: var(--primary-color);
 	overflow: hidden;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .Featured-header-container {
@@ -15,14 +15,14 @@
 	display: flex;
 	justify-content: space-between;
 	justify-self: center;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .Featured-heading-container {
 	width: 600px;
 	height: 80px;
 	gap: 17px;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .Featured-txt {
@@ -71,7 +71,7 @@
 	border: none;
 	background-color: transparent;
 	align-self: flex-end;
-	border: 1px solid green;
+	/* border: 1px solid green; */
 }
 
 .Featured-btn:hover {

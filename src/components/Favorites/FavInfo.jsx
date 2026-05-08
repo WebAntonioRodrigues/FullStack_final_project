@@ -18,7 +18,7 @@ function FavInfo() {
 					</div>
 					<div className="FavInfo-btn-container">
 						<Link className='link' to='/Contact'>
-							<Button className='btn-pricing-primary' text='RESERVE NOW' textClassName='text-btn-pricing-primary' />
+							<Button className='btn-pricing-primary' text='Speak to An Agent' textClassName='text-btn-pricing-primary' />
 						</Link>
 						<Button className='btn-pricing-secondary' text='Download Brochure' textClassName='text-btn-pricing-secondary' />
 					</div>
