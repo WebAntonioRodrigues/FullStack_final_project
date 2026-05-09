@@ -3,6 +3,7 @@ import '../../styles/Home/Hero.css';
 import '../../styles/Style.css';
 import '../../styles/Comun/Buttons.css';
 import Button from '../Comun/Button';
+import QuickSearch from './QuickSearch';
 import divider from '../../assets/Home/Hero/Divider.png';
 
 function Hero() {
@@ -27,17 +28,20 @@ function Hero() {
 				<div className='hero-btn-container'>
 					<div>
 						<Link className='link' to='/Catalog'>
-							<Button className='btn-primary' text='VIEW SHOWCASE' textClassName='text-btn-primary'></Button>
+							<Button className='btn-primary' text='VIEW SHOWCASE' textClassName='text-btn-primary' />
 						</Link>
 					</div>
 					<div>
 						<Link className='link' to='/Detail'>
-							<Button className='btn-secondary' text='TECHNICAL SPECS →'  textClassName='text-btn-secondary'></Button>
+							<Button className='btn-secondary' text='TECHNICAL SPECS →' textClassName='text-btn-secondary' />
 						</Link>
 					</div>
 				</div>
 			</div>
-			<div></div>
+
+			<div className='hero-quicksearch'>
+				<QuickSearch />
+			</div>
 		</section>
 	);
 }

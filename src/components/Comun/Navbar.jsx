@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Button from './Button';
 import '../../styles/Comun/Buttons.css';
@@ -5,6 +6,19 @@ import '../../styles/Comun/Navbar.css';
 import '../../styles/Style.css';
 
 function Navbar() {
+	const [isSearchOpen, setIsSearchOpen] = useState(false);
+	const [searchQuery, setSearchQuery] = useState('');
+
+	function handleSearch() {
+		setIsSearchOpen(prev => !prev);
+	}
+
+	function handleSearchChange(e) {
+		setSearchQuery(e.target.value);
+	}
+
+	const searchInputClass = isSearchOpen ? 'Navbar-search-input visible' : 'Navbar-search-input';
+
 	return (
 		<nav className='Navbar-container'>
 			<div className='logo-container'>
@@ -17,13 +31,17 @@ function Navbar() {
 				<a href='/Favorites'>FAVORITES</a>
 			</div>
 
-			{/*	const handleSearch = e => {
-		setFilters(prev => ({ ...prev, search: e.target.value }));
-	};*/}
-
-			<Link className='link' to='/Contact'>
-				<Button className='btn-Nav' text='ENQUIRE' textClassName='text-btn-primary'></Button>
-			</Link>
+			<div className='Navbar-right'>
+				<div className='Navbar-search-container'>
+					<input type='text' placeholder='Search...' className={searchInputClass} value={searchQuery} onChange={handleSearchChange} autoFocus={isSearchOpen} />
+					<button className='Navbar-search-btn' onClick={handleSearch}>
+						{isSearchOpen ? '✕' : '🔍'}
+					</button>
+				</div>
+				<Link className='link' to='/Contact'>
+					<Button className='btn-Nav' text='ENQUIRE' textClassName='text-btn-primary' />
+				</Link>
+			</div>
 		</nav>
 	);
 }

@@ -1,0 +1,83 @@
+.QuickSearch-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: #1a1c1f;
+  border-radius: 12px;
+  border: 0.5px solid #ffffff0f;
+  font-family: Manrope;
+  width: 320px;
+
+  /* border: 1px solid green; */
+}
+
+.QuickSearch-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* border: 1px solid green; */
+}
+
+.QuickSearch-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+
+  
+ 
+}
+
+.QuickSearch-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  border: 0.5px solid #ffffff1a;
+  border-radius: 8px;
+  padding: 10px 16px;
+  position: relative;
+  /* border: 1px solid green; */
+}
+
+.QuickSearch-txt {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+  margin: 0;
+}
+
+.QuickSearch-select {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--text-primary);
+  font-family: Manrope;
+  font-size: 15px;
+  font-weight: 500;
+  appearance: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.QuickSearch-select option {
+  background: #1a1c1f;
+  color: var(--text-primary);
+}
+
+
+
+.QuickSearch-btn {
+  width: 100%;
+  height: 48px;
+  background: var(--text-secondary);
+  border: none;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}

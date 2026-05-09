@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useSearchParams } from 'react-router-dom';
 import '../../styles/Catalog/CatalogResults.css';
 import CatalogCard from './CatalogCard';
 import useCarList from '../../Hooks/useCarList';
@@ -10,7 +11,16 @@ function CatalogResults() {
 	const [limit, setLimit] = useState(6);
 	const [order, setOrder] = useState('default');
 	const { filters, setFilters, appFilters } = CarFilters();
+	const [searchParams] = useSearchParams();
 
+	useEffect(() => {
+		const marca = searchParams.get('marca');
+		const maxPreco = searchParams.get('maxPreco');
+
+		if (marca) setFilters(prev => ({ ...prev, marca }));
+		if (maxPreco && maxPreco !== 'null') setFilters(prev => ({ ...prev, maxPreco: Number(maxPreco) }));
+		if (maxPreco === 'null') setFilters(prev => ({ ...prev, maxPreco: null }));
+	}, [searchParams, setFilters]);
 
 	const handleLoadMore = () => {
 		setLimit(value => value + 3);
@@ -18,14 +28,12 @@ function CatalogResults() {
 
 	let displayList = [...appFilters(list)];
 
-	
 	if (order === 'low-to-high') {
 		displayList.sort((a, b) => a.preco - b.preco);
 	} else if (order === 'high-to-low') {
 		displayList.sort((a, b) => b.preco - a.preco);
 	}
 
-	
 	const limitedResults = displayList.filter((car, index) => index < limit);
 
 	return (

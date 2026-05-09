@@ -14,6 +14,7 @@ function App() {
 			<FavoritesProvider>
 				<Navbar></Navbar>
 
+
 				<Routes>
 					<Route path='/' element={<Home></Home>} />
 					<Route path='/Catalog' element={<Catalog></Catalog>} />

@@ -1,0 +1,123 @@
+.ContactForm-container {
+	height: 800px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	padding: 48px;
+
+	background-color: #1a1c1e;
+
+	/* border: 1px solid green; */
+}
+
+.ContactForm-data {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 24px;
+
+	/* border: 1px solid green; */
+}
+
+.ContactForm-field {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.ContactForm-txt {
+	font-family: inter;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: var(--text-tertiary);
+	/* border: 1px solid green; */
+}
+
+.ContactForm-input {
+	background: #44474866;
+	border: none;
+	color: var(--text-secondary);
+	font-family: inter;
+	font-weight: 400;
+	letter-spacing: 0px;
+	line-height: 100%;
+	border-radius: 6px;
+	padding: 14px 16px;
+	font-size: 16px;
+	width: 100%;
+	/* border: 1px solid green; */
+}
+
+.ContactForm-select {
+	background: #44474866;
+	border: none;
+	border-radius: 6px;
+	padding: 14px 16px;
+	font-size: 14px;
+	font-family: inter;
+	color: var(--text-primary);
+
+	width: 100%;
+	/* border: 1px solid green; */
+}
+
+.ContactForm-textarea {
+	background: #44474866;
+	border-radius: 6px;
+	padding: 14px 16px;
+	font-size: 14px;
+	font-family: inter;
+	color: var(--text-secondary);
+	border: none;
+	width: 100%;
+	height: 120px;
+	resize: none;
+	/* border: 1px solid green; */
+}
+
+.ContactForm-cars {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+
+	/* border: 1px solid green; */
+}
+
+.ContactForm-btn {
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: none;
+	background: transparent;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-family: inter;
+	color: var(--text-tertiary);
+	cursor: pointer;
+	/* border: 1px solid red; */
+}
+
+.ContactForm-btn:hover {
+	border-color: var(--text-secondary);
+	color: var(--text-secondary);
+}
+
+.ContactForm-btn-active {
+	padding: 10px 20px;
+	border-radius: 4px;
+	border: none;
+	background: transparent;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	font-family: inter;
+	color: var(--text-tertiary);
+	cursor: pointer;
+	border-color: var(--text-secondary);
+	background-color: var(--text-secondary);
+}
+

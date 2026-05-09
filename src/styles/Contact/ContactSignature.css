@@ -1,0 +1,50 @@
+
+.ContactSignature-section{
+    height: 236px;
+    border-radius: 12px;
+    background-color: #1a1c1e;
+    border: 10px solid #4447481A;
+    margin: 30px;
+    padding: 48px;
+    border-radius: 8px;
+}
+
+.ContactSignature-title-container{
+    height: 36px;
+
+    /* border: 1px solid green; */
+
+}
+
+.ContactSignature-title{
+    color: var(--text-primary);
+    font-family: Manrope;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -1px;
+    text-align: center;
+
+}
+
+.ContactSignature-txt-container{
+    height: 78px;
+    margin-top: 30px;
+    max-width: 672px;
+    display: flex;
+    justify-self: center;
+
+    /* border: 1px solid green; */
+
+}
+
+.ContactSignature-txt{
+    color: var(--text-tertiary);
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}

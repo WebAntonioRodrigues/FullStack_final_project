@@ -1,5 +1,15 @@
+import ContactContent from '../components/Contact/ContactContent';
+import ContactHeader from '../components/Contact/ContactHeader';
+import ContactSignature from '../components/Contact/ContactSignature';
+
 function Contact() {
-	<div></div>;
+	return (
+		<div>
+			<ContactHeader></ContactHeader>
+			<ContactContent></ContactContent>
+			<ContactSignature></ContactSignature>
+		</div>
+	);
 }
 
 export default Contact;
