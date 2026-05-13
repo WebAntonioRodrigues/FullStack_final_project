@@ -1,7 +1,7 @@
 
 
 .FavInfo-section{
-    height: 390px;
+    
     margin: 30px;
     border-radius: 4px;
     background-color: #1A1C1E;
@@ -72,4 +72,50 @@ background-image: url('../../assets/Favorites/volante.png');
   background-position: center;
   background-repeat: no-repeat;
 
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .FavInfo-section {
+    flex-direction: column;
+    padding: 32px 24px;
+    margin: 16px;
+    gap: 32px;
+  }
+
+  .FavInfo-container {
+    width: 100%;
+  }
+
+  .FavInfo-container-img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .FavInfo-txt {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .FavInfo-btn-container {
+    flex-direction: column;
+    height: auto;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .FavInfo-section {
+    padding: 24px 16px;
+    margin: 12px;
+  }
+
+  .FavInfo-txt {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .FavInfo-container-img {
+    height: 160px;
+  }
 }

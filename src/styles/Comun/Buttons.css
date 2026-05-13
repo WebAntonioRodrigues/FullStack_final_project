@@ -130,3 +130,26 @@
 	border: none;
 	cursor: pointer;
 }
+
+
+/* Responsivo */
+@media (max-width: 640px) {
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+  }
+
+  .btn-pricing-primary,
+  .btn-pricing-secondary {
+    width: 100%;
+  }
+
+  .btn-form-primary {
+    width: 100%;
+  }
+
+  .btn-Nav {
+    width: auto;
+    padding: 8px 16px;
+  }
+}

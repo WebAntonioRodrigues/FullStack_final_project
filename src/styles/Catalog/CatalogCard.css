@@ -3,8 +3,8 @@
 }
 
 .CatalogCard-container {
-	width: 415px;
-	height: 435px;
+	width: 100%;
+	
 	overflow: hidden;
 	cursor: pointer;
 	/* border: 1px solid red; */
@@ -54,8 +54,7 @@
 }
 
 .CatalogCard-info-left {
-	width: 280px;
-	height: 60px;
+	flex: 1;
 	gap: 4px;
 
 	/* border: 1px solid yellow; */
@@ -146,4 +145,27 @@
     line-height: 18px;
 	text-transform: uppercase;
 	color: var(--text-primary);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .CatalogCard-name {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .CatalogCard-specs-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .CatalogCard-name {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .CatalogCard-specs-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

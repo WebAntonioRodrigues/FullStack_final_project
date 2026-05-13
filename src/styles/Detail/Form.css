@@ -1,6 +1,7 @@
 .Form-card {
-	width: 450px;
-	height: 600px;
+	width: 100%;
+	max-width: 450px;
+	
 	background: #33353766;
 	border-radius: 16px;
 	border: 0.5px solid #ffffff1a;
@@ -9,7 +10,8 @@
 	flex-direction: column;
 	gap: 24px;
 	margin-top: 80px;
-	margin-left: 400px;
+	margin-left: auto;
+	margin-right: auto;
 	/* border: 1px solid green; */
 }
 
@@ -25,6 +27,7 @@
 	height: 64px;
 	border-radius: 10px;
 	object-fit: cover;
+	flex-shrink: 0;
 }
 
 .Form-agent-name {
@@ -48,8 +51,8 @@
 }
 
 .Form-field-container {
-	width: 375px;
-	align-self: center;
+	width: 100%;
+	
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
@@ -57,7 +60,7 @@
 }
 
 .Form-field {
-	height: 80px;
+
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
@@ -101,6 +104,7 @@
 
 .form-btn{
     align-self: center;
+	width: 100%;
 }
 
 .Form-info{
@@ -112,4 +116,30 @@
     text-transform: uppercase;
     line-height: 16px;
     letter-spacing: 1.2px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .Form-card {
+    margin-top: 40px;
+    padding: 20px 16px;
+  }
+
+  .Form-agent-name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Form-card {
+    margin-top: 24px;
+    border-radius: 12px;
+  }
+
+  .Form-input,
+  .Form-select {
+    height: 48px;
+    padding: 12px 16px;
+  }
 }

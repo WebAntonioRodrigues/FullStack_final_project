@@ -1,5 +1,5 @@
 .ContactForm-container {
-	height: 800px;
+	
 	display: flex;
 	flex-direction: column;
 	gap: 40px;
@@ -121,3 +121,26 @@
 	background-color: var(--text-secondary);
 }
 
+/* Responsivo */
+@media (max-width: 768px) {
+  .ContactForm-container {
+    padding: 24px;
+    gap: 24px;
+  }
+
+  .ContactForm-data {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .ContactForm-container {
+    padding: 16px;
+  }
+
+  .ContactForm-input,
+  .ContactForm-select,
+  .ContactForm-textarea {
+    font-size: 14px;
+  }
+}

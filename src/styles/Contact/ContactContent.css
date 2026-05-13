@@ -10,7 +10,7 @@
 }
 
 .ContactContent-form-container {
-	width: 50%;
+	flex: 1;
 	border-radius: 12px;
 
 	/* border: 1px solid red; */
@@ -18,15 +18,13 @@
 
 .ContactContent-info-container {
 	width: 40%;
-    height: 820px;
+	flex-shrink: 0;
 	border-radius: 8px;
 	/* border: 1px solid red; */
 }
 
 .ContactContent-info-map {
-	width: 474px;
-	height: 600px;
-	min-height: 400px;
+	width: 100%;
 
 	/* border: 1px solid blue; */
 }
@@ -39,100 +37,140 @@
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-    border-radius: 8px;
+	border-radius: 8px;
+    margin-left: 16px;
 	/* border: 1px solid yellow; */
 }
 
 .ContactContent-info {
-	width: 474px;
-	height: 200px;
+	width: 100%;
 	background-color: #1a1c1e !important;
-    padding: 28px;
-    border-radius: 8px;
+	padding: 28px;
+	border-radius: 8px;
+    margin-left: 16px;
+    margin-top: 16px;
 
 	/* border: 1px solid green; */
 }
 
-
-.ContactContent-address-title{
-    height: 28px; 
-    color: var(--text-primary);
-    font-family: Manrope;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0px;
-    text-transform: uppercase;
-    border-radius: 8px;
+.ContactContent-address-title {
+	color: var(--text-primary);
+	font-family: Manrope;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: 0px;
+	text-transform: uppercase;
+	border-radius: 8px;
 }
 
-.ContactContent-address-txt{
-    height: 69px;
-    color: var(--text-tertiary);
-    font-family: inter;
-    font-weight: 400;
-    font-size: 14px;
-    padding-top: 10px;
-    line-height: 23px;
-    letter-spacing: 0px;
-  border-radius: 8px;
-
+.ContactContent-address-txt {
+	color: var(--text-tertiary);
+	font-family: inter;
+	font-weight: 400;
+	font-size: 14px;
+	padding-top: 10px;
+	line-height: 23px;
+	letter-spacing: 0px;
+	border-radius: 8px;
 }
 
-.ContactContent-address{
-    height: 16px;
-    padding-top: 25px;
-    font-family: inter;
-    color: var(--text-secondary);
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 1.2px;
-    border-radius: 8px;
-
+.ContactContent-address {
+	padding-top: 25px;
+	font-family: inter;
+	color: var(--text-secondary);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 1.2px;
+	border-radius: 8px;
 }
 
-.ContactContent-bottom-info{
-    margin-top: 70px;
-    width: 474px;
-    height: 129px;
-    display: flex;
-    justify-content: space-between;
+.ContactContent-bottom-info {
+	margin-top: 70px;
+	width: 100%;
 
-   
+	display: flex;
+	justify-content: space-between;
+    gap: 16px;
 
-    /* border: 1px solid yellow; */
+	/* border: 1px solid yellow; */
 }
 
-.ContactContent-bottom-box{
-    width: 220px;
-    height: 124px;
-    border-radius: 8px;
-    background-color: #1A1C1E;
-    padding: 40px;
-   
-
-    /* border: 1px solid green; */
-}
-
-.ContactContent-bottom{
-    font-family: inter;
-    color: var(--text-tertiary);
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 15px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-
-}
-
-.ContactContent-bottom-txt{
-    font-family: Manrope;
-    font-weight: 700;
-    color: var(--text-primary);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0px;
-
+.ContactContent-bottom-box {
+	width: 100%;
+	border-radius: 8px;
+	background-color: #1a1c1e;
+	padding: 40px;
     
+
+	/* border: 1px solid green; */
+}
+
+.ContactContent-bottom {
+	font-family: inter;
+	color: var(--text-tertiary);
+	font-weight: 400;
+	font-size: 10px;
+	line-height: 15px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.ContactContent-bottom-txt {
+	font-family: Manrope;
+	font-weight: 700;
+	color: var(--text-primary);
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0px;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+	.ContactContent-info-container {
+		width: 45%;
+	}
+}
+
+@media (max-width: 768px) {
+	.ContactContent-container {
+		flex-direction: column;
+		padding: 20px;
+	}
+
+	.ContactContent-form-container {
+		width: 100%;
+	}
+
+	.ContactContent-info-container {
+		width: 100%;
+		height: auto;
+	}
+
+	.ContactContent-info-map-img {
+		height: 300px;
+	}
+
+	.ContactContent-bottom-info {
+		margin-top: 16px;
+	}
+}
+
+@media (max-width: 480px) {
+	.ContactContent-container {
+		padding: 16px;
+	}
+
+	.ContactContent-bottom-info {
+		flex-direction: column;
+	}
+
+	.ContactContent-info-map-img {
+		height: 220px;
+	}
+
+	.ContactContent-bottom-box {
+		padding: 16px;
+	}
 }

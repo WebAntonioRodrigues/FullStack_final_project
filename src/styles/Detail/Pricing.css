@@ -1,6 +1,6 @@
 .Pricing-section-container {
 	width: 100%;
-	height: 150px;
+	
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -12,14 +12,14 @@
 
 .Pricing-container {
 	width: 350px;
-	height: 100%;
+
 	gap: 8px;
 	/* border: 1px solid green; */
 }
 
 .Pricing-txt-container {
 	width: 100%;
-	height: 30px;
+	
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
@@ -39,8 +39,8 @@
 
 .Price-container {
 	width: 100%;
-	height: 120px;
-	align-self: flex-end;
+	
+	
 	display: flex;
 
 	/* border: 1px solid green; */
@@ -57,8 +57,55 @@
 .Pricing-btn-container {
 	align-self: center;
 	display: flex;
-	width: 470px;
-	height: 62px;
+	
 	gap: 12px;
 	/* border: 1px solid red; */
+}
+
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .Price {
+    font-size: 56px;
+  }
+
+  .Pricing-container {
+    width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .Pricing-section-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px;
+    gap: 24px;
+  }
+
+  .Pricing-container {
+    width: 100%;
+  }
+
+  .Price {
+    font-size: 48px;
+  }
+
+  .Pricing-btn-container {
+    width: 100%;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .Pricing-section-container {
+    padding: 16px;
+  }
+
+  .Price {
+    font-size: 36px;
+  }
+
+  .Pricing-btn-container {
+    flex-direction: column;
+  }
 }

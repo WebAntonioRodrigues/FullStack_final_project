@@ -137,5 +137,26 @@ input::placeholder {
 }
 
 
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-mega-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 48px 24px 32px 24px;
+  }
 
+  .footer-container {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-mega-container {
+    grid-template-columns: 1fr;
+    padding: 40px 20px 24px 20px;
+  }
+
+  .footer-newsletter-text {
+    width: 100%;
+  }
+}
 

@@ -1,6 +1,6 @@
 .Alternatives-section {
 	width: 100%;
-	height: 830px;
+	
 	padding-top: 112px;
 	padding-left: 48px;
 	padding-right: 48px;
@@ -10,16 +10,17 @@
 
 .Alternatives-heading-container {
 	width: 98%;
-	height: 55px;
+	
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+	margin-bottom: 48px;
 	/* border: 1px solid green; */
 }
 
 .Alternatives-title {
-	width: 400px;
-	height: 40px;
+	
+	
 	display: flex;
 	flex-direction: column;
 	/* border: 1px solid red; */
@@ -48,9 +49,48 @@
 
 .Alternatives-grid {
 	width: 99%;
-    height: 550px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 15px;
 	/* border: 1px solid red; */
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .Alternatives-section {
+    padding: 64px 24px 48px 24px;
+  }
+
+  .Alternatives-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .Alternatives-txt {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Alternatives-section {
+    padding: 48px 16px 32px 16px;
+  }
+
+  .Alternatives-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .Alternatives-heading-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .Alternatives-link {
+    align-self: flex-start;
+  }
+
+  .Alternatives-txt {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
