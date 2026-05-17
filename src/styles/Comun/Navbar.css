@@ -2,11 +2,10 @@
   display: flex;
   width: 100%;
   height: 80px;
-  padding-top: 30px;
-  padding-right: 40px;
-  padding-bottom: 40px;
-  padding-left: 40px;
+  padding: 30px 40px 40px 40px;
   align-items: center;
+  position: relative;
+  z-index: 100;
 }
 
 .logo-container {
@@ -17,7 +16,6 @@
 .logo {
   color: var(--text-secondary);
   font-weight: 900;
-  font-style: bold;
   font-size: 24px;
   line-height: 32px;
   letter-spacing: -1.2px;
@@ -36,7 +34,6 @@
 a {
   text-decoration: none;
   font-weight: 700;
-  font-style: bold;
   color: var(--text-primary);
   font-size: 12px;
   line-height: 16px;
@@ -110,4 +107,55 @@ a:hover {
 
 .Navbar-search-btn:hover {
   color: var(--text-secondary);
+}
+
+.Navbar-hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  color: var(--text-primary);
+  font-size: 22px;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .menu-container {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background: #121416;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 40px 0;
+    border-top: 0.5px solid #ffffff0f;
+    z-index: 100;
+    transform: none;
+  }
+
+  .menu-container.open {
+    display: flex;
+  }
+
+  .Navbar-hamburger {
+    display: flex;
+  }
+
+  .btn-Nav {
+    display: none;
+  }
+
+  .Navbar-search-input.visible {
+    width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Navbar-container {
+    padding: 20px 16px;
+  }
 }
